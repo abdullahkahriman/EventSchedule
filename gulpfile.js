@@ -54,7 +54,7 @@ gulp.task('img', () => {
         .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task('delete', () => del(['dist/css', 'dist/js', 'dist/img', 'dist/**/*.html']));
+gulp.task('delete', () => del(['dist/css', 'dist/js', 'dist/**/*.html']));
 
 gulp.task('watch', () => {
     gulp.watch("src/scss/**/*.scss", ['css']);
